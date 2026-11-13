@@ -1,0 +1,21 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Notes app: Node.js UI and REST API for OCI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "multer": "^2.0.0",
+    "oci-common": "^2.0.0",
+    "oci-objectstorage": "^2.0.0",
+    "oci-secrets": "^2.0.0",
+    "pg": "^8.13.1"
+  }
+}

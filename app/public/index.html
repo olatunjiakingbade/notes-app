@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes on OCI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Notes on OCI</h1>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>New note</h2>
+      <form id="new-note-form">
+        <input id="title" type="text" placeholder="Title" required />
+        <textarea id="body" rows="4" placeholder="Write something..."></textarea>
+        <button type="submit">Save note</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Your notes</h2>
+      <ul id="notes" class="plain"></ul>
+    </section>
+
+    <section class="card" id="detail" hidden>
+      <h2 id="detail-title"></h2>
+      <p id="detail-body"></p>
+      <h3>Attachments</h3>
+      <ul id="attachments" class="plain"></ul>
+      <form id="upload-form">
+        <input id="file" type="file" required />
+        <button type="submit">Upload file</button>
+      </form>
+    </section>
+
+    <p id="status" role="status"></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
